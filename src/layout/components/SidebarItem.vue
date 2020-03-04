@@ -2,7 +2,9 @@
   <div >
     <!-- 没有子菜单 -->
     <el-menu-item :index="resolvePath(basePath)" v-if="hasChild(item.children,item)">
-
+      <svg class="icon" aria-hidden="true" style="font-size: 20px;">
+        <use :xlink:href="item.meta.icon"></use>
+      </svg>&nbsp;&nbsp;&nbsp;
       <span>{{d && d.meta && d.meta.title}}</span>
     </el-menu-item>
     <!-- 有子菜单 -->

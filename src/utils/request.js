@@ -4,7 +4,7 @@ import { getToken } from '@/utils/cookie'
 // axios.defaults.withCredentials=true
 
 const service = axios.create({
-  baseURL: 'http://127.0.0.1:9555/',    //部署到服务器要换成外网地址
+  baseURL: 'http://116.54.19.107:9555/',    //部署到服务器要换成外网地址
   withCredentials:  false // 允许携带cookie
 });
 

@@ -14,7 +14,7 @@ export const constantRoutes = [   //常规配置
     redirect: '/home',
     meta: {
       title: '首页',
-
+      icon:'#iconhome'
     },
     children: [
       {
@@ -22,7 +22,8 @@ export const constantRoutes = [   //常规配置
         name: 'home',
         component: () => import('@/views/home/Home'),
         meta: {
-          title: '首页'
+          title: '首页',
+          icon:'#iconhome'
         }
       }
     ]

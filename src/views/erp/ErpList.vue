@@ -116,9 +116,9 @@
           </el-table-column>
           <el-table-column label="操作" width="450" align="center">
             <template slot-scope="scope">
-              <el-button  type="text" size="medium">编辑</el-button>
+              <el-button  type="text"  @click="handleEditDetails(scope.row)" size="medium">编辑</el-button>
               <el-button type="primary"  icon="el-icon-edit" @click="handleEditDetails(scope.row)" circle></el-button>
-              <el-button type="text" size="medium" style="color: red"  >删除</el-button>
+              <el-button type="text" size="medium" style="color: red" @click="handleDeleteDetails(scope.row.id)" >删除</el-button>
               <el-button type="danger" icon="el-icon-delete" @click="handleDeleteDetails(scope.row.id)"  circle></el-button>
             </template>
           </el-table-column>

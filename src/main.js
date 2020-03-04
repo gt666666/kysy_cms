@@ -21,7 +21,7 @@ Vue.use(Print);
 Vue.use(ElementUI);
 Vue.config.productionTip = false ;// 阻止生产模式的消息
 Vue.prototype.$http = axios;
-axios.defaults.baseURL = 'http://127.0.0.1:9555/';   //部署到服务器要换成外网地址
+axios.defaults.baseURL = 'http://116.54.19.107:9555/';   //部署到服务器要换成外网地址
 //axios.defaults.headers['Authorization']=store.state.token;
 Vue.prototype.$qs = qs;
 new Vue({
